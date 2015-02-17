@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/switch.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
     <body>
         <section class="notepad">
@@ -18,35 +19,46 @@ and open the template in the editor.
                 <h1>Shopping List</h1>
             </div>
             <div class="list">
-                <ul>
+                <ul class="content">
                     <li>
                         <label>
                             <input type="checkbox" name="checkboxName" class="checkbox"/>
                                 <div class="switch"></div>
                         </label>
-                        <p>10 Apples</p>
+                        <p>10 Apples <i class="fa fa-minus-square"></i></p>
+                        
                     </li>
                     <li class="selected">
                         <label>
                             <input type="checkbox" name="checkboxName" class="checkbox"/>
                                 <div class="switch"></div>
                         </label>
-                        <p>2 Bananas</p>
+                        <p>2 Bananas<i class="fa fa-minus-square"></i></p>
                     </li>
                     <li>
                         <label>
                             <input type="checkbox" name="checkboxName" class="checkbox"/>
                                 <div class="switch"></div>
                         </label>
-                        <p>6 Steaks</p>
+                        <p>6 Steaks<i class="fa fa-minus-square"></i></p>
                     </li>
                     <li>
                         <label>
                             <input type="checkbox" name="checkboxName" class="checkbox"/>
                                 <div class="switch"></div>
                         </label>
-                        <p>12 Eggs</p>
-                    </li>                    
+                        <p>12 Eggs<i class="fa fa-minus-square"></i></p>
+                    </li>     
+                    
+                </ul>
+                <ul class="add">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="checkboxName" class="checkbox"/>
+                                <div class="switch"></div>
+                        </label>
+                        <p><input type="text" class="item" value="Enter the quantity and item you are looking for" onclick="this.select()"></p>
+                    </li>
                 </ul>
             </div>
         </section>

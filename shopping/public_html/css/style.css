@@ -26,6 +26,7 @@ body{
     linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
     linear-gradient(#6C534C .1em, transparent .1em);
     background-size: 100% 1.8em;
+    height: auto;
 }
 
 .header{
@@ -45,11 +46,18 @@ h1{
 .list ul{
     list-style-type: none;
     margin-top: 0.1em;
+    
     padding-left: 0.4em;
+    
+}
+
+.content{
+    margin-bottom:0em;
 }
 
 .list li{
     margin-top: 0.625em;
+    
 }
 
 .list p{
@@ -62,4 +70,24 @@ h1{
 .selected p{
     text-decoration: line-through;
     color: graytext;
+    
+}
+
+.fa-minus-square{
+    padding-top: -1em;
+    display: inline;
+    float: right;
+    margin-right: 1em;
+    color: red;
+}
+
+.item{
+    border: none;
+    background-color: #F3E7D7;
+    width: 30em;
+    color: graytext;
+}
+
+.add {
+    margin-bottom: 2em;    
 }
