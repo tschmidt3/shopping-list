@@ -1,0 +1,65 @@
+/* 
+    Created on : Feb 17, 2015, 3:19:33 PM
+    Author     : 570514
+*/
+.checkbox{display:none}
+.switch
+{
+width: 40px;
+height: 0px;
+z-index: 0;
+margin: 0;
+padding: 0;
+background: #4cd964;
+border: none;
+cursor: pointer;
+position: relative;
+border-radius:16px; //IE 11
+-moz-border-radius:16px; //Mozilla
+-webkit-border-radius:16px; //Chrome and Safari
+
+display: inline-block;
+float: left;
+
+}
+.switch:before
+{
+content: ' ';
+position: absolute;
+left: 0px;
+top: -5px;
+width: 40px;
+height: 20px;
+background: #FFFFFF;
+z-index: 1;
+border-radius:16px; //IE 11
+-moz-border-radius:16px; //Mozilla
+-webkit-border-radius:16px; //Chrome and Safari
+
+}
+.switch:after 
+{
+content: ' ';
+height: 19px;
+width: 20px;
+border-radius: 28px;
+background: #FFFFFF;
+position: absolute;
+z-index: 2;
+top: -5px;
+left: 0px;
+-webkit-transition-duration: 300ms;
+transition-duration: 300ms;
+-webkit-box-shadow: 0 2px 5px #999999;
+box-shadow: 0 2px 5px #999999;
+
+}
+.switchOn , .switchOn:before
+{
+background: #4cd964;
+}
+.switchOn:after
+{
+left: 21px !important;
+}
+
